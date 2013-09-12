@@ -24,6 +24,7 @@ textarea {
 
 body {
     background: rgb(50, 56, 61);
+    font-family: helvetica, sans-serif;
 }
 
 .playerWrapper {
@@ -149,12 +150,18 @@ section {
 .trackList {
     counter-reset: item;
     list-style-type: none;
-    padding-left: 13px;
+    margin: 0;
+}
+ol {
+    padding: 0;
 }
 
 li:before {
     content: counter(item) " ";
     counter-increment: item;
+    color: #67747E;
+    font-size: 12px;
+    font-weight: 100;
 }
 
 .songList {
@@ -170,12 +177,37 @@ li:before {
 
 .songLine {
     border-bottom: 1px dotted #C7C7C7;
+    font-size: 13px;
+    font-weight: normal;
+    padding: 7px;
 }
 
 .trackName {
-    margin-left: 13px;
+    display: inline-block;
+    width: 310px;
+    color: #444E55;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: .7px;
+    margin-left: 14px;
 }
 
+.length {
+    display: inline-block;
+    width: 30px;
+    color: #67747E;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.add {
+    display: inline-block;
+    width: 50px;
+    height: 20px;
+    border: 1px solid #AFAFAF;
+    border-radius: 10px;
+    margin-left: 13px;
+}
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection rule sets have to be separate.
