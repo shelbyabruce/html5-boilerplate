@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Player</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -22,7 +22,81 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+       <div class="playerWrapper">
+            <header> <!--Starts top part of player -->
+                <div class="play">
+                    <div class="logo"></div>
+                    <div class="songInfo">
+                        <div class="playingNow">
+                            <p class="songName">Big Sean (Finally Famous-Deluxe)</p>
+                            <p class="album">Memories Part II</p>
+                        </div>
+                    </div>
+                    <div class="coverPhoto"></div>
+                </div>
+                <div class="control">
+                    <div class="borderInset">
+                        <button class="movement back"></button>
+                    </div>
+                     <div class="borderInset borderInsetLarge">
+                        <button class="playButton"></button>
+                    </div>
+                    <div class="borderInset">
+                        <button class="movement next"></button>
+                    </div>
+                </div>
+            </header> <!-- Ends top part of player -->
+            <section> <!-- Starts bottom of player -->
+                <div class="volume"></div>
+                <div class="softer"></div>
+                <div class="volumeBar"></div>
+                <div class="louder"></div>
+                <div>
+                   <div class="progress"></div>
+                    <div class="shuffle"></div>
+                    <div class="repeat"></div> 
+                </div>
+                <div class="songList">
+                    <ol class="trackList">
+                        <li class="songLine">
+                            <span class="trackName">Intro</span>
+                            <span class="length">1:14</span>
+                            <span class="added"></span>
+                        </li>
+                        <li class="songLine">
+                            <span class="trackName">I Do It</span>
+                            <span class="length">3:35</span>
+                            <span class="added"></span>
+                        </li>
+                        <li class="songLine">
+                            <span class="trackName">My Last</span>
+                            <span class="length">4:14</span>
+                            <span class="add"></span>
+                        </li>
+                         <li class="songLine">
+                            <span class="trackName">Don't Tell Me You Love Me</span>
+                            <span class="length">3:56</span>
+                            <span class="added"></span>
+                        </li>
+                         <li class="songLine">
+                            <span class="trackName">Wait For Me</span>
+                            <span class="length">3:57</span>
+                            <span class="added"></span>
+                        </li>
+                         <li class="songLine">
+                            <span class="trackName">Marvin &amp; Chardonnay</span>
+                            <span class="length">3:47</span>
+                            <span class="added"></span>
+                        </li>
+                         <li class="songLine">
+                            <span class="trackName">Dance (A$$)</span>
+                            <span class="length">3:17</span>
+                            <span class="added"></span>
+                        </li>
+                    </ol>
+                </div>
+            </section> <!-- closes bottom of player -->
+       </div> 
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>

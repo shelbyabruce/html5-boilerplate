@@ -18,9 +18,162 @@ textarea {
     color: #222;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-size: 1em;
-    line-height: 1.4;
+    background: rgb(50, 56, 61);
+}
+
+.playerWrapper {
+    width: 500px;
+    height: 383px;
+    background: rgb(103, 117, 125);
+    margin: 100px auto;
+    border: solid rgb(27, 30, 33) 1px;
+    border-radius: 7px;
+    overflow: hidden;
+
+}
+
+header {
+    background-image: -webkit-linear-gradient(top, rgb(137, 149, 155), rgb(103, 117, 125));
+    overflow: hidden;
+}
+
+button {
+    border: none;
+}
+
+/* Styles for the playing now box */
+
+.play {
+    width: 310px;
+    height: 50px;
+    background-image: -webkit-linear-gradient(top, rgb(98, 109, 117), rgb(65, 77, 83));
+    margin-top: 8px;
+    margin-left: 8px;
+    border: solid 1px rgb(47, 59, 64);
+    border-radius: 5px; 
+    display: inline-block;  
+}
+
+.play > div {
+    display: inline-block;
+}
+
+.play p {
+    margin: 0; 
+}
+
+.songName {
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    padding-bottom: 5px;
+}
+
+.album {
+    font-size: 10px;
+    color: rgb(255, 255, 255);
+    letter-spacing: .9px;
+}
+
+.logo {
+    height: 48px;
+    width: 46px;
+    background-color: black;
+}
+
+ .songInfo {
+    vertical-align: top;
+    padding: 12px 10px;
+}
+
+.coverPhoto {
+    width: 32px;
+    height: 32px;
+    background: black;
+    vertical-align: top;
+    margin-top: 8px;
+    border-radius: 4px;
+}
+
+/*Styles the buttons */
+
+.control {
+    width: 170px;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 30px; 
+    padding-top: 15px;  
+}
+
+.control .movement  {
+    background: -webkit-linear-gradient(top, #E9E9E9, #B5B5B5);
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    border: 1px solid #676D73;
+}
+
+.control .playButton {
+    background: -webkit-linear-gradient(top, #E9E9E9, #B5B5B5);
+    width: 29px;
+    height: 29px;
+    border-radius: 100%;
+    border: 1px solid #676D73;
+}
+
+.borderInset {
+    display: inline-block;
+    background: -webkit-linear-gradient(top, #5D6971, #818C94);
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    padding: 4.7px 0 0 4.7px;
+}
+
+.borderInsetLarge {
+    width: 40px;
+    height: 40px;
+    padding: 5.5px 0 0 5.5px;
+}
+
+/*Styles the songList */
+
+section {
+    background: rgb(103, 117, 125);
+}
+
+.trackList {
+    counter-reset: item;
+    list-style-type: none;
+    padding-left: 13px;
+}
+
+li:before {
+    content: counter(item) " ";
+    counter-increment: item;
+}
+
+.songList {
+    background: rgb(239, 239, 239);
+    width: 479px;
+    height: 269px;
+    border: solid rgb(59, 59, 59) 1px;
+    margin-top: 45px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.songLine {
+    border-bottom: 1px dotted #C7C7C7;
+}
+
+.trackName {
+    margin-left: 13px;
 }
 
 /*
