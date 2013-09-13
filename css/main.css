@@ -56,6 +56,7 @@ button {
     margin-top: 8px;
     margin-left: 8px;
     border: solid 1px rgb(47, 59, 64);
+     -webkit-box-shadow: 0px 2px 2px #869198;
     border-radius: 5px; 
     display: inline-block;  
 }
@@ -83,7 +84,7 @@ button {
 .logo {
     height: 48px;
     width: 46px;
-    background-color: black;
+    background: -webkit-linear-gradient(top, #535960, #21282B);
 }
 
  .songInfo {
@@ -100,9 +101,9 @@ button {
     border-radius: 4px;
 }
 
-/*Styles the buttons */
+/*Styles the trackControls */
 
-.control {
+.trackControls {
     width: 170px;
     display: inline-block;
     vertical-align: top;
@@ -110,15 +111,15 @@ button {
     padding-top: 15px;  
 }
 
-.control .movement  {
+.trackControls .movement  {
     background: -webkit-linear-gradient(top, #E9E9E9, #B5B5B5);
-    width: 24px;
-    height: 24px;
+    width: 23.2px;
+    height: 23.2px;
     border-radius: 100%;
     border: 1px solid #676D73;
 }
 
-.control .playButton {
+.trackControls .playButton {
     background: -webkit-linear-gradient(top, #E9E9E9, #B5B5B5);
     width: 29px;
     height: 29px;
@@ -141,6 +142,19 @@ button {
     padding: 5.5px 0 0 5.5px;
 }
 
+/*Styles the playbackControls Panel */
+
+.playbackControls {
+    margin: 8px;
+    margin-bottom: 0;
+    border-top: 1px solid #454F55;
+    -webkit-box-shadow: 0px 2px 2px #869198;
+}
+
+
+
+
+
 /*Styles the songList */
 
 section {
@@ -151,7 +165,9 @@ section {
     counter-reset: item;
     list-style-type: none;
     margin: 0;
+    padding: 13px;
 }
+
 ol {
     padding: 0;
 }
@@ -165,13 +181,12 @@ li:before {
 }
 
 .songList {
-    background: rgb(239, 239, 239);
+    margin: 37px 0 10px 10px;
     width: 479px;
     height: 269px;
+    background: rgb(239, 239, 239);
     border: solid rgb(59, 59, 59) 1px;
-    margin-top: 45px;
-    margin-left: 10px;
-    margin-bottom: 10px;
+    -webkit-box-shadow: 0px 2px 2px #869198;
     border-radius: 5px;
 }
 
@@ -179,7 +194,12 @@ li:before {
     border-bottom: 1px dotted #C7C7C7;
     font-size: 13px;
     font-weight: normal;
-    padding: 7px;
+    padding: 5px 0;
+    line-height: 1.9;
+}
+
+.songLineLast {
+    border-bottom: none;
 }
 
 .trackName {
@@ -202,12 +222,34 @@ li:before {
 
 .add {
     display: inline-block;
-    width: 50px;
+    width: 48px;
     height: 20px;
     border: 1px solid #AFAFAF;
     border-radius: 10px;
-    margin-left: 13px;
+    margin-left: 20px;
+    overflow: hidden;
+    vertical-align: middle;
 }
+
+.added {
+    display: block;
+    float: left;
+    width: 25px;
+    height: 19px;
+    background: -webkit-linear-gradient(top, #FDFDFD, #D1D1D1);
+    border-radius: 10px 0 0px 10px;
+}
+
+.addOption {
+    display: block;
+    float: left;
+    width: 21px;
+    height: 19px;
+    background: -webkit-linear-gradient(top, #D7D7D7, #AFAFAF);
+    border-left: 1px solid #AFAFAF;
+    border-radius: 0 10px 10px 0;
+}
+
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection rule sets have to be separate.
